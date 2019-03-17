@@ -49,11 +49,11 @@
 
   .js [data-menu="list"].active {
     display: block;
-    animation: show-down .3s forwards;
+    animation: show-right .3s forwards;
   }
 
   .js .dropdown-menu {
     position: static;
-    border: 2px solid #222;
+    border: none;
   }
 }
