@@ -29,22 +29,24 @@
   top: 38px;
   border: 2px solid #333;
   z-index: 200;
-}
-
-.dropdown-menu::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -10px;
-  width: 0px;
-  height: 0px;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #333;
-}
-
-.dropdown-menu li a:hover {
-  color: white;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #333;
+  }
+  li {
+    a {
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }
 
 @media (max-width: 700px) {
